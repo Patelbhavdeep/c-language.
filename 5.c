@@ -1,19 +1,22 @@
 #include<stdio.h>
 
 int main(){
-    int b,m;
+    int start,end;
 
-    b = 99;
-    m = 100;
+    printf("enter the value");
+    scanf("%d\n",&start);
+    printf("enter the value");
+    scanf("%d\n",&end);
 
-    printf("b = %d\n",b);
-    printf("m = %d\n\n",m);
+    while (start <= end )
+    {
+        if (start%4==0)
+        {
+          printf("%d\n",start);
 
-    m = m - b;
-    b = m + b;
-    m = b - m;
-
- printf("b = %d\n",b);
-    printf("m = %d\n",m);
-
+        }
+        start++;
+        
+    }
+    
 }

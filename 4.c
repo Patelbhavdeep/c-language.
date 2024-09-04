@@ -1,19 +1,19 @@
-#include <stdio.h>
+#include<stdio.h>
 
 int main(){
-    int x,y,answer;
+    int start;
 
-  printf("Enter value of x =");
-  scanf("%d", &x);
+    printf("enter any value");
+    scanf("%d\n",&start);
 
-  printf("Enter value of y =");
-  scanf("%d", &y);
-
-  // (x+y)3
-  answer =(x*x*x)+(3*x*x*y)+(3*x*y*y)+(y*y*y);
-
-  printf("answer : %d",answer);
-
-
-  
+    while (start > 0)
+    {
+        if (start%2 !=0)
+        {
+            printf("%d",start);
+        }
+        start--;
+        printf("\n");
+    }
+    
 }
